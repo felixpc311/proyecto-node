@@ -6,8 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../public/stylesheets/estilosLogin.css">
+    <link rel="shortcut icon" href="../../public/images/icon1.ico">
 </head>
 <body>
+
+    <header id="main-header">		
+        <a id="logo-header" href="#">
+            <img src="../../public/images/banner4.png" alt="" id="banner"/>
+        </a> <!-- / #logo-header -->
+    
+        <nav>
+            <ul>
+                <li><a href="/" target="_self" id="a_irAinicio">Inicio</a></li>
+            </ul>
+        </nav><!-- / nav -->
+    </header><!-- / #main-header -->
+
     <div id="wrapper">
 
         <form name="login-form" class="login-form" action="auth" method="post">       
@@ -24,7 +38,8 @@
     
             <div class="footer">
             <input type="submit" name="submit" value="Login" class="button" />
-            <button id="cancelar" class="button"><a href="/">Cancelar</a></button>
+            <!-- <button id="cancelar" class="button"><a href="/">Cancelar</a></button> -->
+            <!-- <input type="submit" name="cancelar" value="Cancelar" class="button"  href="/" /> -->
             </div>
         </form>
     </div>
