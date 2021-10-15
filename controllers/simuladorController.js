@@ -48,5 +48,18 @@ module.exports = {
         //swal("Bien hecho!", "Su registro ha sido procesado!", "success");
         
         //res.send("Usuario guardado en la base de datos");
+    },
+    simulador:function(req,res){
+        simuladorModel.simulador(con, function(err,datos){
+            
+
+            if (!err) {
+                console.log(datos);
+                res.render('simulador/simulador',{ tittle: 'Simulador' });
+            } else {
+                console.log("Error de: "+err);
+            }
+        });
+        //res.send('recibido');
     }
 }

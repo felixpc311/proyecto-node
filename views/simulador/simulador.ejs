@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Gastos</title>
+    <link rel="stylesheet" href="../../public/stylesheets/estilosSimulador.css">
+    <link rel="shortcut icon" href="../../public/images/icon1.ico">
+</head>
+<body>
+    <header id="main-header">
+		
+        <a id="logo-header" href="#">
+            <img src="../../public/images/banner4.png" alt="" id="banner"/>
+        </a> <!-- / #logo-header -->
+    
+        <nav>
+            <ul>
+                <li><a href="/" target="_self" id="a_salir">Cerrar Sesión</a></li>
+            </ul>
+        </nav><!-- / nav -->
+    
+    </header><!-- / #main-header -->
+
+
+        <form action="" id="registro_info_mercancia">
+            <h2>Registre la Información de la Mercancía</h2>
+            <br>
+            <label id="lb_tipoContenedor">Tipo y Tamaño del Contenedor:</label>
+            <select>
+            <option value="0">...</option>
+            <option value="1">20FR</option>
+            <option value="2">20ISO</option>
+            <option value="3">20OT</option>
+            <option value="4">20STD</option>
+            <option value="5">20REF</option>
+            <option value="6">40FR</option>
+            <option value="8">40HC</option>
+            <option value="9">40OT</option>
+            <option value="10">40STD</option>
+            <option value="11">40REF</option>
+            <option value="12">45</option>
+            </select>
+            <p><label id="lb_cantidadContenedores">Cantidad de Contenedores:</label>
+            <input type="number" id="cantidad_contenedores" placeholder=""/></p>
+            <p><label id="lb_diasAlmacenaje">Días Estimados</label><br>
+                <label id="lb_diasAlmacenaje">de Almacenaje en Puerto:</label>
+            <input type="number" id="diasAlmacenaje" placeholder=""/></p>
+            <p><label id="lb_inspeccionFisica">Inspección Física (Si/No):</label>
+            <select>
+                <option value="0">...</option>
+                <option value="1">Si</option>
+                <option value="2">No</option>
+            </select></p>
+            <p><label id="lb_inspeccionPrevia">Inspección Pevia (Si/No):</label>
+            <select>
+                <option value="0">...</option>
+                <option value="1">Si</option>
+                <option value="2">No</option>
+            </select></p>
+            <p><label id="lb_mercanciaPeligrosa">Mercancía Peligrosa (Si/No):</label>
+            <select>
+                <option value="0">...</option>
+                <option value="1">Si</option>
+                <option value="2">No</option>
+            </select></p>  
+            <br>
+            <button id="simularCostos">Calcular Costos</button> 
+        </form>
+
+
+    <form action="" id="informe_cotizacion">
+        <h2>Informe de Cotización de Costos</h2>
+        <br>
+        <p><label id="lb_VaUsoInstalaciones">Valor del Uso de las Instalaciones:</label> 
+        <output name="vaUsoInstalaciones"></output></p>
+        <p><label id="lb_VaCargueContenedorCa">Valor del Cargue del Contenedor a Camión:</label> 
+        <output name="VaCargueContenedorCa"></output></p>
+        <p><label id="lb_VaAlmacenaje">Valor de Almacenaje:</label> 
+        <output name="VaAlmacenaje"></output></p>
+        <p><label id="lb_VaMovilizacionInspPrev">Valor Movilización Inspección Previa:</label> 
+        <output name="VaMovilizacionInspPrev"></output></p>
+        <p><label id="lb_VaMovilizacionInsp">Valor Movilización Inspección:</label> 
+        <output name="VaMovilizacionInsp"></output></p>
+        <p><label id="lb_ValorIva">Valor del IVA:</label> 
+        <output name="ValorIva"></output></p>
+        <br>
+        <p><b><label id="lb_ValorTotal">VALOR TOTAL:</label></b></p>
+        <output name="btnValorTotal"></output></p>
+    </form>
+
+    <!-- / #main-footer -->
+    <footer id="main-footer">
+        <p>&copy; 2021. Proyecto MisiónTic2022.</p>
+    </footer>  
+    
+</body>
+</html>

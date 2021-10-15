@@ -1,0 +1,151 @@
+/************ 
+//-------------------------------
+// CABECERA
+//-------------------------------
+************/
+#banner{
+    width: auto;
+    height: 100%;
+}
+
+
+#main-header {
+	background:rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	height: 10%;
+	
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+}	
+#main-header a {
+	color:rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+	
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+    font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 15px;
+}
+	
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+}
+			
+nav ul li a {
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+			
+nav ul li a:hover {
+	background: #cecece;
+}
+	
+
+/************ 
+//-------------------------------
+// FORMULARIOS SIMULADOR DE GASTOS
+//-------------------------------
+************/
+
+body{
+    background-color:steelblue;
+}
+
+h2 {
+    text-align: center;
+} 
+
+#registro_info_mercancia {
+    position: absolute;
+    height: 48%;
+    left: 10%;
+    top: 15%;
+    width: 310px;
+	padding: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background:#f3f3f3;
+	border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+#informe_cotizacion {
+    position: absolute;
+    height: 48%;
+    left: 43%;
+    top: 15%;
+    width: 450px;
+	padding: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background:#f3f3f3;
+	border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+form label{
+    padding: 5px;
+}
+
+input{
+    float: right;
+    width: 90px;
+}
+
+select{
+    float:right;
+    width: 68px;
+}
+
+#simularCostos {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(107, 106, 106);
+    padding: 3px;
+    background-color:rgb(34, 34, 34);    
+} 
+
+
+/************
+//-----------------------------
+// PIE PÁGINA
+//-----------------------------
+************/
+#main-footer {
+	background:rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 20px;
+	margin-top: 720px;
+}
+#main-footer p {
+	margin: 0;
+}
+	
+#main-footer a {
+	color: white;
+}

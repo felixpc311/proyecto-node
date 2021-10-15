@@ -26,6 +26,9 @@ module.exports={
             contrasenaCliente: passwordHaash);*/
 
     },
+    simulador:function(conexion, funcion){
+        conexion.query("SELECT * FROM tblcontenedor", funcion);
+    },
     
 }
 
