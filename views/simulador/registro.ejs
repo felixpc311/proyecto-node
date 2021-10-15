@@ -8,6 +8,20 @@
      <link rel="stylesheet" href="../../public/stylesheets/estilosRegistro.css">
  </head>
  <body>
+    <header id="main-header">
+		
+        <a id="logo-header" href="#">
+            <img src="../../public/images/banner4.png" alt="" id="banner"/>
+        </a> <!-- / #logo-header -->
+    
+        <nav>
+            <ul>
+                <li><a href="/" target="_self" id="a_irAinicio">Inicio</a></li>
+            </ul>
+        </nav><!-- / nav -->
+    
+    </header><!-- / #main-header -->
+
      <form action="/registro" method="POST" id="registrar_usuario_form">
          <h2>Formulario de Registro de Usuario</h2>
          <label id="lb_nombre">Nombres</label> 
@@ -21,7 +35,7 @@
          <label id="lb_contrasena">Contraseña</label>
          <input type="password" id="contrasena_usuario" name="contrasena_usuario" placeholder="contraseña" required/>
          <button id="enviar_registro">Crear Usuario</button>
-         <button id="cancelar"><a href="/">Cancelar</a></button>
+         <!-- <button id="cancelar"><a href="/">Cancelar</a></button> -->
      </form>   
  </body>
 </html>

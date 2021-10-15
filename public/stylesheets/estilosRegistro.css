@@ -1,3 +1,66 @@
+/************ 
+//-------------------------------
+// CABECERA
+//-------------------------------
+************/
+#banner{
+    width: auto;
+    height: 100%;
+}
+
+#main-header {
+	background:rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	height: 10%;
+	
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+}	
+#main-header a {
+	color:rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: underline;
+}
+	
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+    font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 15px;
+}
+	
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+}
+			
+nav ul li a {
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+			
+nav ul li a:hover {
+	background: #cecece;
+}
+
+
+/************ 
+//-------------------------------
+// FORMULARIO REGISTRO DE USUARIO
+//-------------------------------
+************/
 
 body{
     background-color:steelblue;
@@ -11,33 +74,14 @@ body{
     background-color: rgb(255, 255, 255);
 } 
 
-#enviar_registro {
-    margin: 5px 0;
-    padding: 10px;
-    font-size: 15px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(107, 106, 106);
-    padding: 3px;
-    background-color:rgb(34, 34, 34);    
-}
-
-#cancelar {
-    margin: 5px 0;
-    padding: 10px;
-    font-size: 15px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(107, 106, 106);
-    padding: 3px;
-    background-color:rgb(34, 34, 34);    
-}
-
 form {
-    width:360px;
+    width:370px;
 	padding:22px;
 	margin:auto;
-	background-color:rgb(255, 254, 254);
+    margin-top: 84px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background:#f3f3f3;
 	border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
@@ -46,4 +90,37 @@ form {
 
 form label{
     font-weight: bold;
+    padding: 10px;
+}
+
+
+#enviar_registro {
+    margin: 5px ;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(107, 106, 106);
+    padding: 3px;
+    background-color:rgb(34, 34, 34);    
+} 
+
+
+/************
+//-----------------------------
+// PIE PÁGINA
+//-----------------------------
+************/
+#main-footer {
+	background:rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 20px;
+	margin-top: 11px;
+}
+#main-footer p {
+	margin: 0;
+}
+	
+#main-footer a {
+	color: white;
 }
