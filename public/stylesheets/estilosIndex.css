@@ -61,7 +61,8 @@ h2 {
  */
 nav {
 	float: right;
-    font-size: 16px;
+    font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 nav ul {
@@ -126,7 +127,7 @@ nav ul li a:hover {
 	color: rgb(0, 0, 0);
 	text-align: center;
 	padding: 20px;
-	margin-top: 250px;
+	margin-top: 265px;
 }
 #main-footer p {
 	margin: 0;
