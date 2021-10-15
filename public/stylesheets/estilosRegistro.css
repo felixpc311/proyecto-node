@@ -1,0 +1,49 @@
+
+body{
+    background-color:steelblue;
+}
+
+#registrar_usuario_form input{
+    margin: 7px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+} 
+
+#enviar_registro {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(107, 106, 106);
+    padding: 3px;
+    background-color:rgb(34, 34, 34);    
+}
+
+#cancelar {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(107, 106, 106);
+    padding: 3px;
+    background-color:rgb(34, 34, 34);    
+}
+
+form {
+    width:360px;
+	padding:22px;
+	margin:auto;
+	background-color:rgb(255, 254, 254);
+	border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+form label{
+    font-weight: bold;
+}

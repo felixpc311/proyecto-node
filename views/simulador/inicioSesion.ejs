@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../public/stylesheets/estilosLogin.css">
+</head>
+<body>
+    <div id="wrapper">
+
+        <form name="login-form" class="login-form" action="auth" method="post">       
+            <div class="header">
+            <h1>Iniciar Sesión</h1>
+            </div>
+        
+            <div class="content">
+            <input name="username" id="username" type="text" class="input username" placeholder="Usuario" required/>
+            <div class="user-icon"></div>
+            <input name="passw_usuario" id="passw_usuario" type="password" class="input password" placeholder="Contraseña" required/>
+            <div class="pass-icon"></div>		
+            </div>
+    
+            <div class="footer">
+            <input type="submit" name="submit" value="Login" class="button" />
+            <button id="cancelar" class="button"><a href="/">Cancelar</a></button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
