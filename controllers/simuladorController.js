@@ -45,7 +45,7 @@ module.exports = {
         };
         await simuladorModel.registroBD(con, newRegistro, function(err, datos){
             if (!err) {
-                //alert("Ha sido registrado satisfactoriamente")
+                alert("Ha sido registrado satisfactoriamente");
         
                 res.render('simulador/inicioSesion',{ tittle: 'Iniciar Sesion' });
             } else {
