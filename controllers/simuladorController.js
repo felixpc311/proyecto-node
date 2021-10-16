@@ -6,7 +6,7 @@ module.exports = {
     index:function(req, res){
         simuladorModel.obtener(con,function(err, datos){
             if (!err) {
-                console.log(datos);
+        //        console.log(datos);
                 res.render('simulador/index', { title: 'Simulator' });
             } else {
                 console.log("Error de: "+err);
@@ -16,7 +16,7 @@ module.exports = {
     inicioSesion:function(req,res){
         simuladorModel.inicioSesion(con, function(err,datos){
             if (!err) {
-                console.log(datos);
+                //console.log(datos);
                 res.render('simulador/inicioSesion',{ tittle: 'Iniciar Sesion' });
             } else {
                 console.log("Error de: "+err);
@@ -28,7 +28,7 @@ module.exports = {
             
 
             if (!err) {
-                console.log(datos);
+                //console.log(datos);
                 res.render('simulador/registro',{ tittle: 'Registro' });
             } else {
                 console.log("Error de: "+err);
@@ -43,11 +43,18 @@ module.exports = {
             nombres_usuario, apellidos_usuario, numero_celular, 
             email_usuario, contrasena_usuario
         };
-        await con.query('INSERT INTO tblcliente SET ?', [newRegistro]);
-        res.send('Ha sido registrado satisfactoriamente');
-        //swal("Bien hecho!", "Su registro ha sido procesado!", "success");
+        await simuladorModel.registroBD(con, newRegistro, function(err, datos){
+            if (!err) {
+                //alert("Ha sido registrado satisfactoriamente")
         
-        //res.send("Usuario guardado en la base de datos");
+                res.render('simulador/inicioSesion',{ tittle: 'Iniciar Sesion' });
+            } else {
+                console.log("Error de: "+err);
+            }
+        });
+        
+        
+
     },
     simulador:function(req,res){
         simuladorModel.simulador(con, function(err,datos){
