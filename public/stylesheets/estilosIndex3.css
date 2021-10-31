@@ -1,0 +1,177 @@
+/************ 
+//--------------------------------
+// GENERAL
+//-------------------------------
+************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #414848;
+  background: steelblue;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding-top: 80px;
+}
+
+h2 {
+  font-size: 1, 5em;
+  line-height: 40px;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.content {
+  margin-top: auto;
+  font-size: 20px;
+}
+
+/************ 
+//-------------------------------
+// CABECERA
+//-------------------------------
+************/
+#banner {
+  width: auto;
+  height: 100%;
+}
+
+#main-header {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  height: 10%;
+
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+#main-header a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*
+ * Navegación
+ */
+nav {
+  float: right;
+  font-size: 16px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-right: 50px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0 10px;
+}
+
+nav ul #a_inicioSesion,
+nav ul #a_registro {
+  text-decoration: none;
+}
+
+nav ul #a_inicioSesion:hover,
+nav ul #a_registro:hover {
+  background: #510bd4;
+  /* background: #cecece; */
+  border-radius: 0 0 8px 8px;
+}
+
+nav ul #a_inicioSesion:active,
+nav ul #a_registro:active {
+  background-color: black;
+  color: white;
+  border-radius: 0 0 8px 8px;
+}
+/************ 
+//------------------------------
+// CONTENIDO
+//------------------------------
+************/
+#main-content {
+  background: #f3f3f3;
+  width: 90%;
+  max-width: 850px;
+  margin: 70px auto;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#main-content header,
+#main-content .content {
+  padding: 4px 40px;
+  margin: auto;
+  width: 90%;
+  text-align: justify;
+}
+
+/************ 
+//-------------------------------
+// IMAGENES
+//-------------------------------
+************/
+
+#columna1 #img1 {
+  margin-top: -300px;
+  padding: 0;
+  padding-right: 70px;
+  height: 100%;
+  width: 400px;
+  float: right;
+}
+
+#columna1 #img2 {
+  margin-top: -300px;
+  padding: 0;
+  padding-left: 70px;
+  height: 100%;
+  width: 400px;
+  float: left;
+}
+
+#columna3 #img3 {
+  margin-top: -40px;
+  margin-bottom: 25px;
+  padding-left: 220px;
+  width: 550px;
+}
+
+/************
+//-----------------------------
+// PIE PÁGINA
+//-----------------------------
+************/
+#main-footer {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+#main-footer p {
+  padding: 0;
+  margin: 0;
+}
+
+#main-footer a {
+  color: white;
+}

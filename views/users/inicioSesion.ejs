@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../public/stylesheets/estilosLogin.css">
+    <link rel="shortcut icon" href="../../public/images/icon1.ico">
+</head>
+<body>
+
+    <header id="main-header">		
+        <a id="logo-header" href="#">
+            <img src="../../public/images/banner4.png" alt="" id="banner"/>
+        </a> <!-- / #logo-header -->
+    
+        <nav>
+            <ul>
+                <li><a href="/" target="_self" id="a_irAinicio">Inicio</a></li>
+            </ul>
+        </nav><!-- / nav -->
+    </header><!-- / #main-header -->
+
+    <div id="wrapper">
+
+        <form id="login-form" name="login-form" class="login-form" method="post">       
+            <div class="header">
+            <h1>Iniciar Sesión</h1>
+            </div>
+        
+            <div class="content">
+            <input name="username" id="username" type="text" class="input username" placeholder="Usuario" required/>
+            <div class="user-icon"></div>
+            <input name="passw_usuario" id="passw_usuario" type="password" class="input password" placeholder="Contraseña" required/>
+            <div class="pass-icon"></div>		
+            </div>
+    
+            <div class="footer">
+            <!-- <input type="submit" name="submit" value="Login" class="button" /> -->
+            <button type="submit" name="submit" class="button">Login</button>
+            <!-- <input type="submit" name="cancelar" value="Cancelar" class="button"  href="/" /> -->
+            </div>
+        </form>
+    </div>
+    <script type= "text/javascript">
+        const formLogin = document.querySelector('#login-form');
+        console.log(typeof(formLogin))
+        console.log(formLogin)
+        const formData = new FormData(formLogin);
+
+
+        formLogin.addEventListener('submit', event => {
+            event.preventDefault()
+            fetch('/',  { 
+                method: 'POST',
+                body: formData
+            })
+            .then(res => res.json())
+            .then(data => console.log(data))
+        })
+    </script>
+    
+</body>
+</html>

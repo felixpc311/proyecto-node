@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Registro</title>
+     <link rel="stylesheet" href="../../public/stylesheets/estilosRegistro.css">
+     <link rel="shortcut icon" href="../../public/images/icon1.ico">
+ </head>
+ <body>
+    <header id="main-header">
+		
+        <a id="logo-header" href="#">
+            <img src="../../public/images/banner4.png" alt="" id="banner"/>
+        </a> <!-- / #logo-header -->
+    
+        <nav>
+            <ul>
+                <li><a href="/" target="_self" id="a_irAinicio">Inicio</a></li>
+            </ul>
+        </nav><!-- / nav -->
+    
+    </header><!-- / #main-header -->
+
+     <form action="/users/registro" method="POST" id="registrar_usuario_form">
+         <h2>Formulario de Registro de Usuario</h2>
+         <label id="lb_nombre">Nombres</label> 
+         <input type="text" id="nombres_usuario" name="nombres_usuario" placeholder="Nombres" required/>
+         <label id="lb_apellidos">Apellidos</label>
+         <input type="text" id="apellidos_usuario" name="apellidos_usuario" placeholder="Apellidos" required/>
+         <label id="celular">Número Celular</label>
+         <input type="number" id="numero_celular" name="numero_celular" placeholder="Número Celular" required/>
+         <label id="email">Correo Electrónico</label>
+         <input type="email" id="email_usuario" name="email_usuario" placeholder="Correo Electrónico" required/>
+         <label id="lb_contrasena">Contraseña</label>
+         <input type="password" id="contrasena_usuario" name="contrasena_usuario" placeholder="contraseña" required/>
+         <button id="enviar_registro">Crear Usuario</button>
+         <!-- <button id="cancelar"><a href="/">Cancelar</a></button> -->
+     </form> 
+     
+ </body>
+</html>
